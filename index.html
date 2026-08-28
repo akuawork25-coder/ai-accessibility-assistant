@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AccessAI - Accessibility Assistant</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <h1>AccessAI</h1>
+            <p>Make digital content easier to understand.</p>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <section class="intro">
+            <h2>Understand complex information</h2>
+            <p>
+                Paste text below and choose how you would like it processed.
+            </p>
+        </section>
+
+        <section class="input-section">
+
+            <label for="userText">Enter or paste your text</label>
+
+            <textarea
+                id="userText"
+                placeholder="Paste complex text here..."
+                aria-describedby="text-help"
+            ></textarea>
+
+            <p id="text-help" class="help-text">
+                You can paste instructions, articles, school materials,
+                or other information.
+            </p>
+
+            <div class="actions">
+                <button id="simplifyBtn">Simplify</button>
+                <button id="summarizeBtn">Summarize</button>
+                <button id="explainBtn">Explain</button>
+            </div>
+
+        </section>
+
+        <section class="result-section" aria-live="polite">
+
+            <h2>Result</h2>
+
+            <div id="resultBox" class="result-box">
+                <p>
+                    Your result will appear here.
+                </p>
+            </div>
+
+            <button id="readAloudBtn">
+                🔊 Read Aloud
+            </button>
+
+        </section>
+
+        <section class="accessibility-section">
+
+            <h2>Accessibility Options</h2>
+
+            <div class="accessibility-controls">
+
+                <button id="decreaseText">
+                    A− Smaller Text
+                </button>
+
+                <button id="resetText">
+                    A Reset Text
+                </button>
+
+                <button id="increaseText">
+                    A+ Larger Text
+                </button>
+
+                <button id="contrastBtn">
+                    High Contrast
+                </button>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>AccessAI • Designed with accessibility in mind</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
